@@ -1,5 +1,6 @@
-[gd_scene load_steps=23 format=3 uid="uid://bephyqolv3ttp"]
+[gd_scene load_steps=24 format=3 uid="uid://bephyqolv3ttp"]
 
+[ext_resource type="Script" path="res://parallax_background.gd" id="1_1vxea"]
 [ext_resource type="Texture2D" uid="uid://bkx4b71ima61p" path="res://background/additional/water.png" id="1_2kpky"]
 [ext_resource type="Texture2D" uid="uid://cuw8oqxqliijw" path="res://background/additional/sky.png" id="2_j38t2"]
 [ext_resource type="Texture2D" uid="uid://bcf555d2ujdqq" path="res://background/main_background.png" id="3_kwrex"]
@@ -84,6 +85,7 @@ animations = [{
 position = Vector2(0, -3)
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+script = ExtResource("1_1vxea")
 
 [node name="AditionalWater" type="ParallaxLayer" parent="ParallaxBackground"]
 motion_scale = Vector2(1, 0.1)
@@ -154,6 +156,7 @@ texture = ExtResource("5_6x782")
 metadata/_edit_use_anchors_ = true
 
 [node name="CloudT4" type="ParallaxLayer" parent="ParallaxBackground"]
+visible = false
 motion_scale = Vector2(0.1, 0.1)
 motion_mirroring = Vector2(640, 0)
 
